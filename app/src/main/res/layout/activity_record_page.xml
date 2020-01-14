@@ -61,6 +61,7 @@
                 android:layout_marginRight="21dp"
                 android:layout_weight="0"
                 app:srcCompat="@drawable/split_line" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -68,23 +69,27 @@
             android:layout_height="57.1dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/btn_beforeMeal_unclicked"
+                android:scaleType="centerCrop"
                 android:layout_width="42.3dp"
                 android:layout_height="29.7dp"
                 android:layout_marginLeft="29.7dp"
                 android:layout_marginTop="13.8dp"
+                android:padding="0dp"
                 android:layout_marginBottom="13.7dp"
-                android:layout_weight="0"
-                app:srcCompat="@drawable/before_meal" />
+                app:srcCompat="@drawable/before_meal"
+                />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/btn_afterMeal_unclicked"
+                android:scaleType="centerCrop"
                 android:layout_width="42.3dp"
                 android:layout_height="29.7dp"
                 android:layout_marginLeft="4.7dp"
                 android:layout_marginTop="13.8dp"
                 android:layout_marginBottom="13.7dp"
+                android:padding="0dp"
                 android:layout_weight="0"
                 app:srcCompat="@drawable/after_meal" />
 
@@ -109,14 +114,16 @@
                 android:textSize="22.7sp"
                 tools:text="mg/dl" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/btn_inputBloodSugar"
+                android:scaleType="centerCrop"
                 android:layout_width="66.3dp"
                 android:layout_height="29.7dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="16.8dp"
                 android:layout_weight="0"
                 app:srcCompat="@drawable/input_btn" />
+
         </LinearLayout>
     </LinearLayout>
 
@@ -162,49 +169,103 @@
             android:layout_height="59.6dp"
             android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/txt_firstMedi_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="29.7dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="0"
+                android:text="7:30 AM"
+                android:textColor="#F16161"
+                android:textSize="13.7sp" />
+
             <ImageView
                 android:id="@+id/dot_firstMedi_taken"
                 android:layout_width="9dp"
                 android:layout_height="9.3dp"
-                android:layout_marginLeft="50.3dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginTop="33dp"
                 android:layout_weight="0"
                 app:srcCompat="@drawable/dot_checked" />
+
+            <TextView
+                android:id="@+id/txt_secondMedi_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="0"
+                android:text="2:30 PM"
+                android:textColor=" #f16161 "
+                android:textSize="13.7sp" />
 
             <ImageView
                 android:id="@+id/dot_secondMedi_untaken"
                 android:layout_width="9dp"
                 android:layout_height="9.3dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginTop="33dp"
                 android:layout_weight="0"
                 app:srcCompat="@drawable/dot_unchecked" />
+
+            <TextView
+                android:id="@+id/txt_thirdMedi_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="0"
+                android:text="2:30 PM"
+                android:textColor=" #f16161 "
+                android:textSize="13.7sp" />
 
             <ImageView
                 android:id="@+id/dot_thirdMedi_untaken"
                 android:layout_width="9dp"
                 android:layout_height="9.3dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginTop="33dp"
                 android:layout_weight="0"
                 app:srcCompat="@drawable/dot_unchecked" />
+
+            <TextView
+                android:id="@+id/txt_fourthMedi_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="0"
+                android:text="2:30 PM"
+                android:textColor=" #f16161 "
+                android:textSize="13.7sp" />
 
             <ImageView
                 android:id="@+id/dot_fourthMedi_untaken"
                 android:layout_width="9dp"
                 android:layout_height="9.3dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginTop="33dp"
                 android:layout_weight="0"
                 app:srcCompat="@drawable/dot_unchecked" />
+
+            <TextView
+                android:id="@+id/txt_firftMedi_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="0"
+                android:text="2:30 PM"
+                android:textColor=" #f16161 "
+                android:textSize="13.7sp" />
 
             <ImageView
                 android:id="@+id/dot_fifthMedi_untaken"
                 android:layout_width="9dp"
                 android:layout_height="9.3dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginRight="50.3dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginTop="33dp"
                 android:layout_weight="0"
                 app:srcCompat="@drawable/dot_unchecked" />
         </LinearLayout>
