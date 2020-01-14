@@ -22,7 +22,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="25dp"
-            android:layout_marginTop="11.7dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -38,8 +38,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="7dp"
-                android:layout_marginTop="2.3dp"
-                android:layout_marginBottom="2.3dp"
                 android:lineSpacingExtra="2.7sp"
                 android:textColor="#707070"
                 android:textSize="18.3sp"
@@ -76,21 +74,19 @@
                 android:layout_height="29.7dp"
                 android:layout_marginLeft="29.7dp"
                 android:layout_marginTop="13.8dp"
-                android:padding="0dp"
                 android:layout_marginBottom="13.7dp"
-                app:srcCompat="@drawable/before_meal"
-                />
+                android:padding="0dp"
+                app:srcCompat="@drawable/before_meal" />
 
             <ImageButton
                 android:id="@+id/btn_afterMeal_unclicked"
-                android:scaleType="centerCrop"
                 android:layout_width="42.3dp"
                 android:layout_height="29.7dp"
                 android:layout_marginLeft="4.7dp"
                 android:layout_marginTop="13.8dp"
                 android:layout_marginBottom="13.7dp"
                 android:padding="0dp"
-                android:layout_weight="0"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/after_meal" />
 
             <EditText
@@ -116,12 +112,12 @@
 
             <ImageButton
                 android:id="@+id/btn_inputBloodSugar"
-                android:scaleType="centerCrop"
                 android:layout_width="66.3dp"
                 android:layout_height="29.7dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="35dp"
                 android:layout_marginTop="16.8dp"
-                android:layout_weight="0"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/input_btn" />
 
         </LinearLayout>
@@ -155,7 +151,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="7dp"
-                android:layout_marginTop="2.3dp"
+                android:layout_marginTop="0"
                 android:layout_marginBottom="2.3dp"
                 android:lineSpacingExtra="2.7sp"
                 android:textColor="#707070"
@@ -275,13 +271,15 @@
             android:layout_height="58.4dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/btn_pm"
-                android:layout_width="40dp"
+                android:layout_width="43dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="29.7dp"
                 android:layout_marginTop="17.1dp"
                 android:layout_weight="0"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/pm" />
 
             <TimePicker
@@ -292,13 +290,15 @@
                 android:layout_marginTop="17.1dp"
                 android:timePickerMode="spinner"></TimePicker>
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/btn_inputMedicine"
+                android:scaleType="centerCrop"
                 android:layout_width="66.3dp"
                 android:layout_height="29.7dp"
                 android:layout_marginLeft="63dp"
                 android:layout_marginTop="16.8dp"
                 android:layout_weight="0"
+                android:padding="0dp"
                 app:srcCompat="@drawable/input_btn" />
 
         </LinearLayout>
@@ -325,9 +325,9 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="20.3dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="5dp"
             android:lineSpacingExtra="2.7sp"
             android:textColor="#707070"
             android:textSize="18.3sp"
@@ -354,13 +354,15 @@
             android:textSize="22.3sp"
             tools:text="kg" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/btn_inputWeight"
             android:layout_width="66.3dp"
             android:layout_height="29.7dp"
-            android:layout_marginLeft="63dp"
+            android:layout_marginLeft="65dp"
             android:layout_marginTop="10dp"
             android:layout_weight="0"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/input_btn" />
 
     </LinearLayout>
@@ -393,8 +395,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="7dp"
-                android:layout_marginTop="2.3dp"
-                android:layout_marginBottom="2.4dp"
+                android:layout_marginBottom="@dimen/cardview_compat_inset_shadow"
                 android:lineSpacingExtra="2.7sp"
                 android:textColor="#707070"
                 android:textSize="18.3sp"
@@ -407,13 +408,15 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imageView15"
+            <ImageButton
+                android:id="@+id/btn_addMealImage"
+                android:scaleType="centerCrop"
                 android:layout_width="101.7dp"
                 android:layout_height="101.7dp"
                 android:layout_marginLeft="29.7dp"
                 android:layout_marginTop="14dp"
                 android:layout_weight="0"
+                android:padding="0dp"
                 app:srcCompat="@drawable/addbtn_withboxaround" />
         </LinearLayout>
     </LinearLayout>
