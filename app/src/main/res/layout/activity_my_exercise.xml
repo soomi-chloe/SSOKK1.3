@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MyExercise">
+
+    <LinearLayout
+        android:id="@+id/layout_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="69.7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/biggest_box"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="52.3dp"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+</LinearLayout>

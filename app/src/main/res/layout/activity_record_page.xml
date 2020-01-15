@@ -151,7 +151,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="7dp"
-                android:layout_marginTop="0"
                 android:layout_marginBottom="2.3dp"
                 android:lineSpacingExtra="2.7sp"
                 android:textColor="#707070"
@@ -183,7 +182,7 @@
                 android:layout_marginLeft="-30dp"
                 android:layout_marginTop="33dp"
                 android:layout_weight="0"
-                app:srcCompat="@drawable/dot_checked" />
+                app:srcCompat="@drawable/dot_after_meal" />
 
             <TextView
                 android:id="@+id/txt_secondMedi_time"
