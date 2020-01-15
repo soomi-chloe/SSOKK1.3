@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".infomation"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="12.3dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="13.3dp"
+        android:layout_paddingLeft="2dp"
+        android:layout_paddingTop="20.3dp"
+        android:layout_paddingRight="2dp"
+        android:text="당뇨병 상식" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="350dp"
+        android:layout_height="123dp"
+
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="12.3dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="13.3dp"
+
+        android:layout_paddingLeft="2dp"
+        android:layout_paddingTop="20.3dp"
+        android:layout_paddingRight="2dp"
+        android:src="@drawable/box"
+        android:text="당뇨병 상식" />
+</LinearLayout>
