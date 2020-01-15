@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".infomation"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MyPage"></activity>
+        <activity android:name=".RecordPage" />
+        <activity android:name=".DoWorkout" />
+      <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
