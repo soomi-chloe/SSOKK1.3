@@ -70,27 +70,11 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/weightRecordTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="23dp"
-                        android:text="체중 기록 보기"
-                        android:textSize="13.3sp" />
-
-                    <TextView
                         android:id="@+id/bloodSugarRecordTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="14dp"
+                        android:layout_marginTop="23dp"
                         android:text="혈당 수치 기록 보기"
-                        android:textSize="13.3sp" />
-
-                    <TextView
-                        android:id="@+id/mealRecordTxt"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="14dp"
-                        android:text="식사 기록 보기"
                         android:textSize="13.3sp" />
 
                     <TextView
@@ -101,20 +85,70 @@
                         android:text="약 복용 시간 기록 보기"
                         android:textSize="13.3sp" />
 
+                    <TextView
+                        android:id="@+id/weightRecordTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="체중 기록 보기"
+                        android:textSize="13.3sp" />
+
+                    <TextView
+                        android:id="@+id/mealRecordTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13.7dp"
+                        android:text="식사 기록 보기"
+                        android:textSize="13.3sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="207.6dp"
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/imageButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:id="@+id/bloodSugarRecordBtn"
+                        android:layout_width="8dp"
+                        android:layout_height="15.5dp"
                         android:layout_marginTop="24.3dp"
+                        android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
                         app:srcCompat="@drawable/see_menu" />
+
+                    <ImageButton
+                        android:id="@+id/medicineRecordBtn"
+                        android:layout_width="8dp"
+                        android:layout_height="15.5dp"
+                        android:layout_marginTop="16.7dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/see_menu" />
+
+                    <ImageButton
+                        android:id="@+id/weightRecordBtn"
+                        android:layout_width="8dp"
+                        android:layout_height="15.5dp"
+                        android:layout_marginTop="16.7dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/see_menu" />
+
+                    <ImageButton
+                        android:id="@+id/mealRecordBtn"
+                        android:layout_width="8dp"
+                        android:layout_height="15.5dp"
+                        android:layout_marginTop="16.7dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/see_menu" />
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -125,7 +159,7 @@
     <LinearLayout
         android:id="@+id/settingsLayout"
         android:layout_width="match_parent"
-        android:layout_height="335.3dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="7dp"
         android:layout_marginTop="10.3dp"
         android:layout_marginRight="7dp"
@@ -152,6 +186,7 @@
                 android:layout_width="15.8dp"
                 android:layout_height="15.8dp"
                 android:layout_marginLeft="3.3dp"
+                android:layout_marginTop="3dp"
                 app:srcCompat="@drawable/settings" />
         </LinearLayout>
 
@@ -161,26 +196,29 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="29.7dp"
             android:layout_marginTop="19.3dp"
+            android:layout_marginRight="31dp"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="19dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/setAccountTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="계정 관련 설정"
-                    android:textSize="11.3sp" />
+                    android:text="@string/setAccountTxt"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/setNameTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="이름 변경"
+                    android:text="@string/setNameTxt"
                     android:textSize="13.3sp" />
 
                 <TextView
@@ -188,7 +226,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
-                    android:text="비밀번호 변경"
+                    android:text="@string/setPWTxt"
                     android:textSize="13.3sp" />
 
                 <TextView
@@ -196,15 +234,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="23dp"
-                    android:text="알람 관련 설정"
-                    android:textSize="11.3dp" />
+                    android:text="@string/setAlarmTxt"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12dp" />
 
                 <TextView
                     android:id="@+id/bloodSugarAlarmTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14.7dp"
-                    android:text="혈당 체크 시간 알림"
+                    android:text="@string/bloodSugarAlarmTxt"
                     android:textSize="13.3sp" />
 
                 <TextView
@@ -212,7 +251,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
-                    android:text="약 복용 시간 알림"
+                    android:text="@string/medicineAlarmTxt"
                     android:textSize="13.3sp" />
 
                 <TextView
@@ -220,7 +259,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
-                    android:text="운동 시간 알림"
+                    android:text="@string/exerciseAlarmTxt"
                     android:textSize="13.3sp" />
 
                 <TextView
@@ -228,7 +267,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25.3dp"
-                    android:text="로그아웃"
+                    android:text="@string/signOutTxt"
                     android:textSize="13.3sp" />
 
                 <TextView
@@ -236,24 +275,102 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14.3dp"
-                    android:text="회원탈퇴" />
+                    android:text="@string/withdrawalTxt"
+                    android:textColor="@android:color/holo_red_dark" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="194dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bloodSugarAlarmOnTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="134dp"
+                    android:text="켬"
+                    android:textSize="13.3sp" />
+
+                <TextView
+                    android:id="@+id/medicineAlarmOnTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.7dp"
+                    android:text="켬"
+                    android:textSize="13.3sp" />
+
+                <TextView
+                    android:id="@+id/exerciseAlarmOnTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.7dp"
+                    android:text="켬"
+                    android:textSize="13.3sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16.9dp"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/setNameBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="15.5dp"
+                    android:layout_marginTop="33dp"
+                    android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
                     app:srcCompat="@drawable/see_menu" />
+
+                <ImageButton
+                    android:id="@+id/setPWBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="15.5dp"
+                    android:layout_marginTop="16.7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/see_menu" />
+
+                <ImageButton
+                    android:id="@+id/bloodSugarAlarmBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="15.5dp"
+                    android:layout_marginTop="53.3dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/see_menu" />
+
+                <ImageButton
+                    android:id="@+id/medicineAlarmBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="15.5dp"
+                    android:layout_marginTop="16.7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/see_menu" />
+
+                <ImageButton
+                    android:id="@+id/exerciseAlarmBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="15.5dp"
+                    android:layout_marginTop="16.7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/see_menu" />
+
             </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
+
 </LinearLayout>
